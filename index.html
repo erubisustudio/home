@@ -143,14 +143,31 @@
                 <li><a class="text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
                         href="#stack">Progetti</a></li>
             </ul>
-            <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-on-primary rounded font-label text-sm font-medium hover:bg-primary-dim transition-colors duration-300"
+             <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-on-primary rounded font-label text-sm font-medium hover:bg-primary-dim transition-colors duration-300"
                 href="#contact">
                 Contattami
             </a>
-            <button class="md:hidden text-on-surface hover:opacity-80 transition-opacity">
+            <button id="mobile-menu-button" class="md:hidden text-on-surface hover:opacity-80 transition-opacity">
                 <span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>menu</span>
             </button>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-[#fafaf5]/95 dark:bg-[#2e342d]/95 backdrop-blur-xl shadow-lg border-t border-outline-variant/20">
+            <ul class="flex flex-col font-headline text-lg tracking-tight px-[5vw] py-6 gap-6">
+                <li><a class="block text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
+                        href="#philosophy">Filosofia</a></li>
+                <li><a class="block text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
+                        href="#process">Processo</a></li>
+                <li><a class="block text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
+                        href="#work">Lavoro</a></li>
+                <li><a class="block text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
+                        href="#stack">Progetti</a></li>
+                <li><a class="inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary rounded font-label text-sm font-medium hover:bg-primary-dim transition-colors duration-300 w-full mt-2"
+                        href="#contact">Contattami</a></li>
+            </ul>
+        </div>
+      
     </nav>
     <main>
         <!-- 1. Hero Section -->
