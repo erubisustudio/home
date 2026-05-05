@@ -5,29 +5,34 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Erubisu Studio | Sviluppo Web</title>
+    <title>Erubisu Studio | Sviluppo Web Design Minimalista</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="Erubisu Studio – Portfolio di sviluppo web curatoriale. Uniamo l'arte dell'estetica giapponese all'efficienza del codice moderno per creare esperienze digitali uniche." />
     <meta name="keywords"
-        content="web design, sviluppo front-end, portfolio, minimalismo giapponese, UI/UX, Erubisu Studio, web agency italia, design curatoriale"/>
-    <meta name="robots" content="index, follow"/>
-    <link rel="canonical" href="https://erubisustudio.github.io/home/"/>
+        content="web design, sviluppo front-end, portfolio, minimalismo giapponese, UI/UX, Erubisu Studio, web agency italia, design curatoriale" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://erubisu.studio" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png"/>
-    <link rel="apple-touch-icon" href="images/favicon.png"/>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://erubisustudio.github.io/home/" />
-    <meta property="og:title" content="Erubisu Studio"/>
+    <meta property="og:url" content="https://erubisu.studio" />
+    <meta property="og:title" content="Erubisu Studio | Architectural Quiet Portfolio" />
     <meta property="og:description"
         content="L'arte incontra l'efficienza. Sviluppo web curatoriale con eleganza e precisione." />
-    <meta property="og:image" content="https://erubisustudio.github.io/home/og-image.jpg" />
+    <meta property="og:image" content="https://erubisu.studio/og-image.jpg" />
 
-  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://erubisu.studio" />
+    <meta name="twitter:title" content="Erubisu Studio | Architectural Quiet Portfolio" />
+    <meta name="twitter:description" content="Sviluppo web curatoriale tra estetica giapponese e codice moderno." />
+    <meta name="twitter:image" content="https://erubisu.studio/og-image.jpg" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -121,6 +126,14 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+
+        /* Prevent text selection */
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
     </style>
 </head>
 
@@ -129,9 +142,10 @@
     <nav
         class="fixed top-0 w-full z-50 bg-[#fafaf5]/70 dark:bg-[#2e342d]/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(46,52,45,0.06)]">
         <div class="flex justify-between items-center px-[5vw] py-6 max-w-[1440px] mx-auto">
-            <div
-                class="font-headline text-2xl font-bold text-[#2e342d] dark:text-[#fafaf5] hover:opacity-80 transition-opacity duration-300">
-                <a href="#hero">Erubisu Studio</a>
+            <div class="hover:opacity-80 transition-opacity duration-300">
+                <a href="#hero">
+                    <img src="images/Logo.png" alt="Erubisu Studio" class="h-[85px] w-[85px] object-contain">
+                </a>
             </div>
             <ul class="hidden md:flex gap-8 font-headline text-lg tracking-tight">
                 <li><a class="text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
@@ -139,11 +153,11 @@
                 <li><a class="text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
                         href="#process">Processo</a></li>
                 <li><a class="text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
-                        href="#work">Lavoro</a></li>
+                        href="#portfolio">Portfolio</a></li>
                 <li><a class="text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
-                        href="#stack">Progetti</a></li>
+                        href="#skills">Skills</a></li>
             </ul>
-             <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-on-primary rounded font-label text-sm font-medium hover:bg-primary-dim transition-colors duration-300"
+            <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-on-primary rounded font-label text-sm font-medium hover:bg-primary-dim transition-colors duration-300"
                 href="#contact">
                 Contattami
             </a>
@@ -160,14 +174,13 @@
                 <li><a class="block text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
                         href="#process">Processo</a></li>
                 <li><a class="block text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
-                        href="#work">Lavoro</a></li>
+                        href="#portfolio">Portfolio</a></li>
                 <li><a class="block text-[#5b6159] dark:text-[#aeb4aa] hover:text-[#2e342d] dark:hover:text-[#fafaf5] transition-colors"
-                        href="#stack">Progetti</a></li>
+                        href="#skills">Skills</a></li>
                 <li><a class="inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary rounded font-label text-sm font-medium hover:bg-primary-dim transition-colors duration-300 w-full mt-2"
                         href="#contact">Contattami</a></li>
             </ul>
         </div>
-      
     </nav>
     <main>
         <!-- 1. Hero Section -->
@@ -183,16 +196,16 @@
                     </p>
                     <div class="pt-4">
                         <a class="inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-br from-primary to-primary-dim text-on-primary rounded font-label text-sm font-medium tracking-wide shadow-md hover:shadow-lg transition-all duration-300"
-                            href="#work">
+                            href="#portfolio">
                             Esplora i Progetti
                         </a>
                     </div>
                 </div>
                 <div class="lg:col-span-7 flex justify-center items-center">
                     <div
-                        class="w-3/4 h-[460px] lg:h-[600px] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(46,52,45,0.06)] relative">
+                        class="w-[320px] h-[320px] md:w-[460px] md:h-[460px] lg:w-[540px] lg:h-[540px] rounded-full overflow-hidden shadow-[0_24px_48px_rgba(46,52,45,0.12)] relative border-[12px] border-surface-container">
                         <img alt="Professional profile" class="w-full h-full object-cover object-center"
-                            src="foto_profilo.png" />
+                            src="images/foto_profilo.webp" />
                     </div>
                 </div>
             </div>
@@ -228,40 +241,35 @@
                     <div
                         class="w-12 h-12 bg-primary-container text-on-primary-container rounded flex items-center justify-center font-headline text-xl mb-4">
                         01</div>
-                    <h3 class="font-headline text-xl text-on-surface">Profondità e Precisione</h3>
-                    <p class="font-body text-on-surface-variant">Ricerca approfondita e analisi dei requisiti
-                        per gettare fondamenta solide prima di scrivere una singola riga di codice.</p>
+                    <h3 class="font-headline text-xl text-on-surface">Il Brief</h3>
+                    <p class="font-body text-on-surface-variant text-sm md:text-base leading-relaxed">Iniziamo con una chiacchierata. Mi racconti la tua idea, i tuoi obiettivi e cosa ti aspetti dal tuo nuovo sito. Mi serve a capire chi sei per creare qualcosa che ti rappresenti davvero.</p>
                 </div>
                 <div class="flex flex-col gap-4 lg:mt-12">
                     <div
                         class="w-12 h-12 bg-primary-container text-on-primary-container rounded flex items-center justify-center font-headline text-xl mb-4">
                         02</div>
-                    <h3 class="font-headline text-xl text-on-surface">Eleganza e Funzionalità</h3>
-                    <p class="font-body text-on-surface-variant">Design visivo che bilancia estetica
-                        minimalista con usabilità intuitiva, rispettando i principi di Ma e della tipografia editoriale.
-                    </p>
+                    <h3 class="font-headline text-xl text-on-surface">Lo Sviluppo</h3>
+                    <p class="font-body text-on-surface-variant text-sm md:text-base leading-relaxed">Qui entro nel vivo. Trasformo i concetti di cui abbiamo parlato in una struttura reale, veloce e bella da vedere su ogni dispositivo.</p>
                 </div>
                 <div class="flex flex-col gap-4">
                     <div
                         class="w-12 h-12 bg-primary-container text-on-primary-container rounded flex items-center justify-center font-headline text-xl mb-4">
                         03</div>
-                    <h3 class="font-headline text-xl text-on-surface">Precisione nel Codice</h3>
-                    <p class="font-body text-on-surface-variant">Sviluppo front-end e back-end curato,
-                        performante e accessibile, con un'architettura scalabile e manutenibile.</p>
+                    <h3 class="font-headline text-xl text-on-surface">Il Perfezionamento</h3>
+                    <p class="font-body text-on-surface-variant text-sm md:text-base leading-relaxed">Non mi accontento mai del primo risultato. Controllo ogni dettaglio, correggo i piccoli difetti e mi assicuro che tutto scorra fluidamente. È la fase in cui rendo il tuo sito davvero impeccabile.</p>
                 </div>
                 <div class="flex flex-col gap-4 lg:mt-12">
                     <div
                         class="w-12 h-12 bg-primary-container text-on-primary-container rounded flex items-center justify-center font-headline text-xl mb-4">
                         04</div>
-                    <h3 class="font-headline text-xl text-on-surface">Perfezione Senza Compromessi</h3>
-                    <p class="font-body text-on-surface-variant">Testing rigoroso, ottimizzazione delle
-                        performance e revisione dei dettagli prima del rilascio finale in produzione.</p>
+                    <h3 class="font-headline text-xl text-on-surface">La Pubblicazione</h3>
+                    <p class="font-body text-on-surface-variant text-sm md:text-base leading-relaxed">Una volta che tutto è pronto e sei soddisfatto, premo il tasto d'invio. Metto il tuo sito online, lo configuro correttamente e mi assicuro che sia pronto per essere trovato dai tuoi clienti.</p>
                 </div>
             </div>
         </section>
         <!-- 5. Portfolio -->
-        <section class="py-32 px-[5vw] max-w-[1440px] mx-auto" id="work">
-            <h2 class="font-headline text-5xl text-on-background mb-24">I miei lavori</h2>
+        <section class="py-32 px-[5vw] max-w-[1440px] mx-auto" id="portfolio">
+            <h2 class="font-headline text-5xl text-on-background mb-24">Portfolio</h2>
             <div class="flex flex-col gap-32">
                 <!-- Project 1: Shadow Chat -->
                 <article class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -270,7 +278,7 @@
                             class="relative w-full max-w-[800px] aspect-[16/10] bg-gray-800 border-gray-800 border-[8px] md:border-[12px] rounded-t-xl md:rounded-t-2xl overflow-hidden shadow-2xl">
                             <div class="absolute inset-0 bg-white overflow-hidden rounded-sm md:rounded">
                                 <img alt="Shadow Chat Interface" class="w-full h-full object-cover object-top"
-                                    src="shadow_chat.png" />
+                                    src="images/shadow_chat.webp" />
                             </div>
                         </div>
                         <div
@@ -302,7 +310,7 @@
                             class="relative w-full max-w-[800px] aspect-[16/10] bg-gray-800 border-gray-800 border-[8px] md:border-[12px] rounded-t-xl md:rounded-t-2xl overflow-hidden shadow-2xl">
                             <div class="absolute inset-0 bg-white overflow-hidden rounded-sm md:rounded">
                                 <img alt="OSINT Lab Interface" class="w-full h-full object-cover object-top"
-                                    src="osint_website.png" />
+                                    src="images/osint_website.webp" />
                             </div>
                         </div>
                         <div
@@ -318,7 +326,7 @@
                             class="relative w-full max-w-[800px] aspect-[16/10] bg-gray-800 border-gray-800 border-[8px] md:border-[12px] rounded-t-xl md:rounded-t-2xl overflow-hidden shadow-2xl">
                             <div class="absolute inset-0 bg-white overflow-hidden rounded-sm md:rounded">
                                 <img alt="Vera Social Interface" class="w-full h-full object-cover object-top"
-                                    src="vera.png" />
+                                    src="images/vera_social.webp" />
                             </div>
                         </div>
                         <div
@@ -338,13 +346,18 @@
             </div>
         </section>
         <!-- 7. Technical Skills -->
-        <section class="py-32 px-[5vw] max-w-[1440px] mx-auto" id="stack">
+        <section class="py-32 px-[5vw] max-w-[1440px] mx-auto" id="skills">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
                 <div>
-                    <h2 class="font-headline text-4xl text-on-surface mb-8">Stack Tecnologico</h2>
-                    <p class="font-body text-lg text-on-surface-variant mb-12">La maestria degli strumenti è
-                        fondamentale. Un approccio curato al codice richiede una conoscenza profonda delle tecnologie
-                        sottostanti, senza dipendere esclusivamente da astrazioni di alto livello.</p>
+                    <h2 class="font-headline text-4xl text-on-surface mb-8">Skills</h2>
+                    <p class="font-body text-lg text-on-surface-variant mb-12">
+                        Per me, lo sviluppo web è un equilibrio tra arte e logica. Applico il <strong>Muda</strong> per
+                        rimuovere
+                        tutto ciò che rallenta il tuo sito, lasciando spazio solo all'essenziale e alla velocità.
+                        Grazie al <strong>Kaizen</strong>, perfeziono ogni riga di codice con un miglioramento
+                        costante,
+                        garantendo soluzioni solide, sicure e pronte a crescere nel tempo.
+                    </p>
                 </div>
                 <div class="flex flex-col gap-10 justify-center">
                     <div>
@@ -374,6 +387,15 @@
                             <div class="h-full bg-primary rounded-full" style="width: 75%;"></div>
                         </div>
                     </div>
+                    <div>
+                        <div class="flex justify-between items-end mb-2">
+                            <span class="font-headline text-xl text-on-surface">Ai Knowledge</span>
+                            <span class="font-label text-sm text-on-surface-variant tracking-[0.05em]">80%</span>
+                        </div>
+                        <div class="h-1 w-full bg-surface-container-high rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -383,9 +405,26 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div
                     class="bg-surface-container p-12 rounded-lg shadow-[0_20px_40px_rgba(46,52,45,0.06)] flex flex-col">
+                    <h3 class="font-headline text-2xl text-on-surface mb-2">Pacchetto Base</h3>
                     <div class="text-4xl text-primary font-headline mb-6">600€</div>
-                    <p class="font-body text-on-surface-variant mb-8 flex-grow">Focus su funzionalità
-                        essenziali e design pulito. Ideale per landing page e piccoli portafogli.</p>
+                    <ul class="font-body text-on-surface-variant mb-8 flex-grow space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5" style="font-size: 20px;">check_circle</span>
+                            <span>4 Pagine (Home, Servizi, Chi siamo, Contatti)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5" style="font-size: 20px;">check_circle</span>
+                            <span>Dominio gratuito incluso per un anno</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5" style="font-size: 20px;">check_circle</span>
+                            <span>Cloud-hosting gratuito per un anno</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5" style="font-size: 20px;">check_circle</span>
+                            <span>Max 2 revisioni incluse.</span>
+                        </li>
+                    </ul>
                     <a class="inline-flex items-center justify-center px-6 py-3 border border-outline text-on-surface rounded font-label text-sm font-medium hover:bg-surface-container-highest transition-colors duration-300"
                         href="#contact">Richiedi Info</a>
                 </div>
@@ -396,8 +435,21 @@
                         Consigliato</div>
                     <h3 class="font-headline text-2xl text-on-primary-container mb-2">Pacchetto Medium</h3>
                     <div class="text-4xl text-primary-dim font-headline mb-6">900€</div>
-                    <p class="font-body text-on-primary-container mb-8 flex-grow">Focus su funzionalità
-                        avanzate e ottimizzazione profonda. Perfetto per siti aziendali e multi-pagina.</p>
+                    <ul class="font-body text-on-primary-container mb-8 flex-grow space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5" style="font-size: 20px;">check_circle</span>
+                            <span>Include tutto il Pacchetto Base</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5" style="font-size: 20px;">shield_lock</span>
+                            <span>Focus su sicurezza & privacy</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5" style="font-size: 20px;">visibility_off</span>
+                            <span>Protezione dati per prevenire fughe di info online</span>
+                        </li>
+                       
+                    </ul>
                     <a class="inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary rounded font-label text-sm font-medium hover:bg-primary-dim transition-colors duration-300 shadow-md"
                         href="#contact">Richiedi Info</a>
                 </div>
@@ -423,16 +475,10 @@
                 <p class="font-body text-on-surface-variant mb-12 relative z-10">Scrivimi per esplorare come possiamo
                     collaborare.</p>
                 <div class="flex flex-col sm:flex-row gap-6 relative z-10 mt-8 sm:justify-center">
-                    <a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded font-label text-base font-medium tracking-wide shadow-md hover:bg-primary-dim hover:shadow-lg transition-all duration-300 w-full sm:w-auto"
-                        href="mailto:adrianelvisiale@gmail.com">
-                        <span class="material-symbols-outlined mr-2">mail</span>
-                        Scrivimi
-                    </a>
-                    <a class="inline-flex items-center justify-center px-8 py-4 bg-surface-container-high text-on-surface rounded font-label text-base font-medium tracking-wide shadow-sm hover:bg-surface-container-highest hover:shadow transition-all duration-300 w-full sm:w-auto border border-outline-variant/30"
-                        href="#">
-                        <span class="material-symbols-outlined mr-2">work</span>
-                        LinkedIn
-                    </a>
+                    <button onclick="openContactModal()" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded font-label text-base font-medium tracking-wide shadow-md hover:bg-primary-dim hover:shadow-lg transition-all duration-300 w-full sm:w-auto">
+                        <span class="material-symbols-outlined mr-2">connect_without_contact</span>
+                        Come contattarmi
+                    </button>
                 </div>
             </div>
         </section>
@@ -442,19 +488,18 @@
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 <div class="flex flex-col gap-4">
                     <span class="font-headline italic text-xl text-[#576246] dark:text-[#effdd8]">Erubisu
-                        Studio</span>
+                        Studio - Web Design & Development</span>
                     <p class="font-body text-sm uppercase tracking-[0.05em] text-[#5b6159] dark:text-[#aeb4aa]">
                         © 2026 Erubisu studio
                     </p>
+
                 </div>
-                <div
-                    class="grid grid-cols-1 sm:grid-cols-3 gap-8 font-body text-sm uppercase tracking-[0.05em] text-[#5b6159] dark:text-[#aeb4aa]">
-                    <a class="hover:text-primary transition-colors" href="https://www.garanteprivacy.it/codice"
-                        target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-                    <a class="hover:text-primary transition-colors" href="https://www.garanteprivacy.it/cookie"
-                        target="_blank" rel="noopener noreferrer">Cookie Policy</a>
-                    <a class="hover:text-primary transition-colors" href="https://www.garanteprivacy.it/regolamentoue"
-                        target="_blank" rel="noopener noreferrer">GDPR Compliance</a>
+                <div class="flex flex-wrap items-center justify-start md:justify-end gap-6 sm:gap-8 font-body text-sm uppercase tracking-[0.05em] text-on-surface-variant dark:text-outline-variant">
+                    <div class="flex flex-wrap items-center gap-6">
+                        <button onclick="openLegalModal('privacy')" class="hover:text-primary transition-colors">Privacy</button>
+                        <button onclick="openLegalModal('cookie')" class="hover:text-primary transition-colors">Cookie</button>
+                        <button onclick="openLegalModal('gdpr')" class="hover:text-primary transition-colors">GDPR</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -471,36 +516,224 @@
                 </p>
             </div>
             <div class="flex justify-end gap-4">
-                <button
-                    class="px-4 py-2 text-xs font-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors"
-                    onclick="document.getElementById('cookie-banner').style.display='none'">Preferenze</button>
-                <button
-                    class="px-6 py-2 bg-primary text-on-primary rounded text-xs font-label uppercase tracking-widest hover:bg-primary-dim transition-colors shadow-sm"
-                    onclick="document.getElementById('cookie-banner').style.display='none'">Accetta</button>
+                <button id="cookie-pref"
+                    class="px-4 py-2 text-xs font-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">Preferenze</button>
+                <button id="cookie-accept"
+                    class="px-6 py-2 bg-primary text-on-primary rounded text-xs font-label uppercase tracking-widest hover:bg-primary-dim transition-colors shadow-sm">Accetta</button>
             </div>
         </div>
     </div>
 
-      <!-- Mobile Menu Script -->
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-[200] hidden items-center justify-center p-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="contact-modal-backdrop" onclick="closeContactModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-surface rounded-2xl shadow-[0_24px_48px_rgba(0,0,0,0.2)] p-10 max-w-sm w-full transform scale-95 opacity-0 transition-all duration-300 border border-outline-variant/20 text-center" id="contact-modal-content">
+            <button onclick="closeContactModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface transition-colors" aria-label="Chiudi">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h3 class="font-headline text-2xl text-on-surface mb-6">Scegli come contattarmi</h3>
+            
+            <div class="flex flex-col gap-4">
+                <!-- Email Option -->
+                <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 select-all cursor-pointer group relative hover:bg-surface-container transition-colors" onclick="copyEmail()">
+                    <div class="flex items-center justify-center gap-2 mb-2">
+                        <span class="material-symbols-outlined text-on-surface-variant text-xl">mail</span>
+                        <span class="font-label text-sm uppercase tracking-wide text-on-surface-variant">Email</span>
+                    </div>
+                    <span id="contact-email" class="font-body text-base text-primary font-medium block">adrianelvisiale@gmail.com</span>
+                    <p class="text-[10px] text-primary mt-2 uppercase tracking-[0.1em] opacity-0 group-hover:opacity-100 transition-opacity font-medium">Clicca per copiare</p>
+                </div>
+
+                <!-- LinkedIn Option -->
+                <div onclick="safeNavigate('https://www.linkedin.com/in/adrian-iale-681371388/')" class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 group hover:bg-surface-container transition-colors block cursor-pointer">
+                    <div class="flex items-center justify-center gap-2 mb-2">
+                        <svg class="w-5 h-5 text-on-surface-variant" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span class="font-label text-sm uppercase tracking-wide text-on-surface-variant">LinkedIn</span>
+                    </div>
+                    <span class="font-body text-base text-primary font-medium block">Contattami su LinkedIn</span>
+                    <p class="text-[10px] text-primary mt-2 uppercase tracking-[0.1em] opacity-0 group-hover:opacity-100 transition-opacity font-medium">Apri Profilo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal Summary Modal -->
+    <div id="legal-modal" class="fixed inset-0 z-[200] hidden items-center justify-center p-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="legal-modal-backdrop" onclick="closeLegalModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-surface rounded-2xl shadow-[0_24px_48px_rgba(0,0,0,0.2)] p-8 max-w-md w-full transform scale-95 opacity-0 transition-all duration-300 border border-outline-variant/20" id="legal-modal-content">
+            <button onclick="closeLegalModal()" class="absolute top-6 right-6 text-on-surface-variant hover:text-on-surface transition-colors" aria-label="Chiudi">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h3 id="legal-modal-title" class="font-headline text-2xl text-on-surface mb-4">Titolo</h3>
+            <p id="legal-modal-body" class="font-body text-on-surface-variant leading-relaxed text-sm md:text-base">
+                Contenuto
+            </p>
+            <div class="mt-8 flex justify-end">
+                <button onclick="closeLegalModal()" class="px-6 py-2.5 bg-primary text-on-primary rounded font-label text-xs uppercase tracking-widest hover:bg-primary-dim transition-colors shadow-sm">Ho capito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Navigation Logic (Hides URLs from status bar)
+            window.safeNavigate = (url) => {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            };
+
+            // Mobile Menu Logic
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            const mobileMenuLinks = mobileMenu?.querySelectorAll('a');
 
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
                 });
+
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Legal Modal Logic
+            const legalModal = document.getElementById('legal-modal');
+            const legalModalBackdrop = document.getElementById('legal-modal-backdrop');
+            const legalModalContent = document.getElementById('legal-modal-content');
+            const legalModalTitle = document.getElementById('legal-modal-title');
+            const legalModalBody = document.getElementById('legal-modal-body');
+
+            const legalData = {
+                privacy: {
+                    title: "Privacy Policy",
+                    body: "Rispettiamo il tuo spazio digitale. Raccogliamo esclusivamente le informazioni essenziali per offrirti i nostri servizi. I tuoi dati non verranno mai ceduti o venduti a terzi, ma trattati con la massima riservatezza e protetti con standard di sicurezza elevati."
+                },
+                cookie: {
+                    title: "Cookie Policy",
+                    body: "Per mantenere il sito performante e funzionale, utilizziamo solo cookie tecnici strettamente necessari. Abbiamo eliminato ogni script di tracciamento invasivo o cookie di profilazione non richiesto, nel pieno rispetto della tua privacy e per offrirti un'esperienza veloce e pulita."
+                },
+                gdpr: {
+                    title: "Conformità GDPR",
+                    body: "Il tuo diritto alla riservatezza è garantito. In piena conformità con il GDPR, ti assicuriamo il controllo totale sui tuoi dati personali. In qualsiasi momento puoi richiederne l'accesso, la rettifica o la cancellazione definitiva dai nostri sistemi."
+                }
+            };
+
+            window.openLegalModal = (type) => {
+                const data = legalData[type];
+                if (data && legalModal) {
+                    document.body.style.overflow = 'hidden'; // Evita scorrimento sfondo
+                    legalModalTitle.textContent = data.title;
+                    legalModalBody.textContent = data.body;
+                    
+                    legalModal.classList.remove('hidden');
+                    legalModal.classList.add('flex');
+                    
+                    void legalModal.offsetWidth;
+                    
+                    legalModalBackdrop.classList.remove('opacity-0');
+                    legalModalContent.classList.remove('scale-95', 'opacity-0');
+                }
+            };
+
+            window.closeLegalModal = () => {
+                if (legalModal) {
+                    document.body.style.overflow = ''; // Ripristina scorrimento
+                    legalModalBackdrop.classList.add('opacity-0');
+                    legalModalContent.classList.add('scale-95', 'opacity-0');
+                    
+                    setTimeout(() => {
+                        legalModal.classList.add('hidden');
+                        legalModal.classList.remove('flex');
+                    }, 300);
+                }
+            };
+
+            // Contact Modal Logic
+            const contactModal = document.getElementById('contact-modal');
+            const contactModalBackdrop = document.getElementById('contact-modal-backdrop');
+            const contactModalContent = document.getElementById('contact-modal-content');
+
+            window.openContactModal = () => {
+                if (contactModal) {
+                    document.body.style.overflow = 'hidden'; // Evita scorrimento sfondo
+                    contactModal.classList.remove('hidden');
+                    contactModal.classList.add('flex');
+                    void contactModal.offsetWidth;
+                    contactModalBackdrop.classList.remove('opacity-0');
+                    contactModalContent.classList.remove('scale-95', 'opacity-0');
+                }
+            };
+
+            window.closeContactModal = () => {
+                if (contactModal) {
+                    document.body.style.overflow = ''; // Ripristina scorrimento
+                    contactModalBackdrop.classList.add('opacity-0');
+                    contactModalContent.classList.add('scale-95', 'opacity-0');
+                    setTimeout(() => {
+                        contactModal.classList.add('hidden');
+                        contactModal.classList.remove('flex');
+                    }, 300);
+                }
+            };
+
+            window.copyEmail = () => {
+                const email = document.getElementById('contact-email').textContent;
+                navigator.clipboard.writeText(email).then(() => {
+                    const emailSpan = document.getElementById('contact-email');
+                    const originalText = emailSpan.textContent;
+                    emailSpan.textContent = 'Copiato!';
+                    setTimeout(() => {
+                        emailSpan.textContent = originalText;
+                    }, 2000);
+                });
+            };
+
+            // Prevent Copy and Context Menu
+            document.addEventListener('contextmenu', e => e.preventDefault());
+            document.addEventListener('keydown', e => {
+                if (e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'u' || e.key === 's')) {
+                    e.preventDefault();
+                }
             });
+
+            // Cookie Banner Logic
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptButton = document.getElementById('cookie-accept');
+            const prefButton = document.getElementById('cookie-pref');
+
+            if (cookieBanner) {
+                // Check if consent was already given
+                if (localStorage.getItem('cookie-consent') === 'accepted') {
+                    cookieBanner.style.display = 'none';
+                }
+
+                const hideBanner = () => {
+                    cookieBanner.classList.add('opacity-0', 'translate-y-10');
+                    setTimeout(() => {
+                        cookieBanner.style.display = 'none';
+                    }, 500);
+                    localStorage.setItem('cookie-consent', 'accepted');
+                };
+
+                if (acceptButton) acceptButton.addEventListener('click', hideBanner);
+                if (prefButton) {
+                    prefButton.addEventListener('click', () => {
+                        hideBanner();
+                        openLegalModal('cookie'); // Mostra la policy dei cookie se cliccano Preferenze
+                    });
+                }
+            }
         });
     </script>
-
-    
 </body>
 
 </html>
